@@ -1,0 +1,14 @@
+[
+    {
+        "name": "Akhila",
+        "marks": 88,
+        "attendance": 90,
+        "result": "Pass"
+    },
+    {
+        "name": "nandu",
+        "marks": 88,
+        "attendance": 91,
+        "result": "Pass"
+    }
+]
