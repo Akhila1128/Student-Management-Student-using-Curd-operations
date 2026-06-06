@@ -1,89 +1,107 @@
-📌 ML-Based CRUD Application Using Flask (No Database)
+Gender Detection using Machine Learning & Flask
+📌 Overview
 
-A simple Machine Learning powered CRUD web application built using Flask, HTML, CSS, and JavaScript.
-This project performs Create, Read, Update, Delete (CRUD) operations without using any database by storing data in a JSON file and using a basic ML model for prediction.
+This project is a web-based Gender Detection system built using Machine Learning and Flask.
+It predicts the gender (Male/Female) based on a given name using a trained classification model.
+
+The system uses a simple dataset of names and applies Natural Language Processing techniques to convert text into numerical features for prediction.
 
 🚀 Features
-➕ Add new student records (Create)
-📄 View all student records (Read)
-✏️ Update existing student records (Update)
-❌ Delete student records (Delete)
-🤖 Machine Learning prediction (Pass/Fail)
-💾 No database used (JSON file storage)
-🌐 Simple and clean web UI
-🧠 Machine Learning Concept
-
-A simple Logistic Regression model is used to predict student performance based on:
-
-Marks
-Attendance
-Output:
-Pass
-Fail
+Predicts gender from user-input name
+Machine Learning-based classification model
+Web interface built with Flask
+Lightweight and fast prediction
+CSV-based training dataset
+Simple and interactive UI
 🛠️ Tech Stack
-Frontend: HTML, CSS, JavaScript
-Backend: Flask (Python)
-ML: scikit-learn
-Data Storage: JSON file
+Python
+Flask
+Pandas
+Scikit-learn
+Joblib
+HTML5
+CSS3
 📁 Project Structure
-ml-crud-project/
+Gender-Detection-Project/
 │
-├── app.py                # Flask backend API
-├── model.py              # ML model logic
-├── data.json             # JSON storage file
-├── requirements.txt      # Dependencies
+├── app.py                  # Flask application
+├── train_model.py          # Model training script
+├── gender_dataset.csv      # Dataset file
+├── model.pkl               # Trained ML model
+├── vectorizer.pkl          # Feature extractor
+├── requirements.txt        # Dependencies
 │
 ├── templates/
-│   └── index.html        # Frontend UI
+│   └── index.html          # Frontend UI
 │
 ├── static/
-│   ├── style.css         # Styling
-│   └── script.js         # CRUD operations (JS)
+│   └── style.css           # Styling file
 │
-└── README.md
-⚙️ Installation & Setup
-1. Clone the repository
-git clone https://github.com/your-username/ml-crud-project.git
-cd ml-crud-project
-2. Create virtual environment (optional)
+└── README.md               # Project documentation
+📊 Dataset Description
+
+The dataset contains labeled names with corresponding gender values.
+
+ID	Name	Gender
+1	KANOJ	MALE
+2	SNEHA	FEMALE
+3	RAHUL	MALE
+4	PRIYA	FEMALE
+5	ARJUN	MALE
+6	DIVYA	FEMALE
+7	VIKRAM	MALE
+8	POOJA	FEMALE
+9	KARTHIK	MALE
+10	ANJALI	FEMALE
+⚙️ Installation Guide
+1. Clone Repository
+git clone https://github.com/your-username/gender-detection-project.git
+cd gender-detection-project
+2. Create Virtual Environment (Optional)
 python -m venv venv
 venv\Scripts\activate   # Windows
-3. Install dependencies
+3. Install Dependencies
 pip install -r requirements.txt
-▶️ Run the Project
+🧠 Model Training
+
+Train the machine learning model using:
+
+python train_model.py
+
+This will generate:
+
+model.pkl
+vectorizer.pkl
+▶️ Run Application
+
+Start the Flask server:
+
 python app.py
 
-Then open in browser:
+Open in browser:
 
 http://127.0.0.1:5000
-📡 API Endpoints
-Method	Endpoint	Description
-GET	/students	Get all students
-POST	/students	Add new student
-PUT	/students/<index>	Update student
-DELETE	/students/<index>	Delete student
-📌 Example Input
-{
-  "name": "John",
-  "marks": 85,
-  "attendance": 1
-}
-Output:
-Pass
-🎯 Learning Outcomes
-Flask API development
-CRUD operations without database
-Frontend + backend integration
-Basic Machine Learning integration
-JSON-based data handling
-📸 UI Preview
+🔍 How It Works
+User enters a name
+Name is converted into numerical features using CountVectorizer
+Trained Naive Bayes model predicts gender
+Result is displayed on the web interface
+📌 Algorithm Used
+Multinomial Naive Bayes Classification
+📈 Example Output
+Input	Output
+Rahul	MALE
+Sneha	FEMALE
+Arjun	MALE
+Pooja	FEMALE
+🚀 Future Enhancements
+Increase dataset size for better accuracy
+Improve UI/UX design
+Deploy on cloud platforms (Render / AWS / Heroku)
+Add real-time API endpoint
+Integrate deep learning model
 
-(You can add screenshots here later)
 
-![UI Screenshot](static/screenshot.png)
-🔮 Future Improvements
-Add SQLite / MongoDB support
-Improve ML accuracy with real dataset
-Add authentication system
-Add charts & analytics dashboard
-Deploy on cloud (Render / Heroku)
+📜 License
+
+This project is licensed for educational and academic use only.
