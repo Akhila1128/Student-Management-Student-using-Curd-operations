@@ -180,4 +180,4 @@ Columns:
 
 # Au# GitHub Repository
 
-https://github.com/Nandu388/Student-Management-System-using-Curd-operations
+https://github.com/Akhila1128/Student-Management-Student-using-Curd-operations
