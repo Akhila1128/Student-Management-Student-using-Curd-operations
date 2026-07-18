@@ -10,7 +10,7 @@ This application allows users to:
 * Delete student records
 * Predict student performance using Machine Learning
 
-The project uses SQLite database instead of storing data in JSON files.
+The project uses SQLite database instead of storing data in JSON files. 
 
 ---
 
