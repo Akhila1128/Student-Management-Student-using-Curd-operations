@@ -68,13 +68,13 @@ ml-crud-project/
 ## Clone Repository
 
 ```bash
-git clone https://github.com/Nandu388/Student-Management-System-using-Curd-operations.git
+git clone https://github.com/Akhila1128/Student-Management-Student-using-Curd-operations.git
 ```
 
 ## Move Into Project Folder
 
 ```bash
-cd Student-Management-System-using-Curd-operations
+cd Student-Management-Student-using-Curd-operations
 ```
 
 ## Install Dependencies
